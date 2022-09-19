@@ -6,11 +6,7 @@ use PHPUnit\Framework\TestCase;
 class HelpersTest extends TestCase
 {
 
-    /**
-     * A basic test example.
-     *
-     * @return void
-     */
+    /** @test */
     public function test()
     {
         $this->assertTrue(str_contains('Laravel', 'Lara'));
