@@ -13,8 +13,8 @@ class HelpersTest extends TestCase
         $this->assertTrue(true);
     }
 
+    /** @test */
     public function testSum() {
-
         $this->assertEquals(30, sum(10, 5, 10, 5));
     }
 }
