@@ -12,4 +12,9 @@ class HelpersTest extends TestCase
         $this->assertTrue(str_contains('Laravel', 'Lara'));
         $this->assertTrue(true);
     }
+
+    public function testSum() {
+
+        $this->assertEquals(30, sum(10, 5, 10, 5));
+    }
 }

@@ -1,5 +1,5 @@
 <?php
 
-function sum($val1, $val2): int {
-    return $val1 + $val2;
+function sum(int ...$val): int {
+    return array_sum($val);
 }
