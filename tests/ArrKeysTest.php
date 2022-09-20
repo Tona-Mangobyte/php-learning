@@ -220,4 +220,37 @@ class ArrKeysTest extends TestCase
         $this->assertEquals("red", $result3["a"]);
         $this->assertEquals("green", $result3["b"]);
     }
+
+    /** @test */
+    public function testArraySort() {
+        $age=array("Peter"=>"35","Ben"=>"37","Joe"=>"43");
+        $isSort = asort($age);
+        $this->assertTrue($isSort);
+
+        $this->assertEquals(35, $age["Peter"]);
+        $this->assertEquals(37, $age["Ben"]);
+        $this->assertEquals(43, $age["Joe"]);
+    }
+
+    /** @test */
+    public function testCompact() {
+        $firstname = "Peter";
+        $lastname = "Griffin";
+        $age = "41";
+
+        $result = compact("firstname", "lastname", "age");
+
+        $this->assertEquals("Peter", $result["firstname"]);
+        $this->assertEquals("Griffin", $result["lastname"]);
+        $this->assertEquals("41", $result["age"]);
+
+        $name = array("firstname", "lastname");
+        $location = "Phnom Penh";
+        $result2 = compact($name, "location", "age");
+
+        $this->assertEquals("Peter", $result2["firstname"]);
+        $this->assertEquals("Griffin", $result2["lastname"]);
+        $this->assertEquals("41", $result2["age"]);
+        $this->assertEquals("Phnom Penh", $result2["location"]);
+    }
 }
