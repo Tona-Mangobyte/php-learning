@@ -45,6 +45,43 @@ class ArrKeysTest extends TestCase
         $this->assertEquals('Cocaolca Can', $productValues[1]);
         $this->assertEquals('0.5', $productValues[2]);
 
-        print_r($invoice);
+        // print_r($invoice);
+    }
+
+    /** @test */
+    public function testArrayColumn() {
+        $a = array(
+            array(
+                'id' => 5698,
+                'first_name' => 'Peter',
+                'last_name' => 'Griffin',
+            ),
+            array(
+                'id' => 4767,
+                'first_name' => 'Ben',
+                'last_name' => 'Smith',
+            ),
+            array(
+                'id' => 3809,
+                'first_name' => 'Joe',
+                'last_name' => 'Doe',
+            )
+        );
+
+        $last_names = array_column($a, 'last_name');
+
+        $this->assertEquals('Griffin', $last_names[0]);
+        $this->assertEquals('Smith', $last_names[1]);
+        $this->assertEquals('Doe', $last_names[2]);
+    }
+
+    /** @test */
+    public function testArrayKeyExists() {
+        $cars=array("Volvo"=>"XC90","BMW"=>"X5");
+
+        $hasVolvo = array_key_exists('Volvo', $cars);
+        $hasLexus = array_key_exists('Lexus', $cars);
+        $this->assertTrue($hasVolvo);
+        $this->assertFalse($hasLexus);
     }
 }
