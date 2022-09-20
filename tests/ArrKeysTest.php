@@ -157,4 +157,67 @@ class ArrKeysTest extends TestCase
         $this->assertEquals(43, $resultAge[1]["Joe"]);
         $this->assertEquals(50, $resultAge[1]["Harry"]);
     }
+
+    /** @test */
+    public function testArrayDiff() {
+        $a1=array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+        $a2=array("e"=>"red","f"=>"green","g"=>"blue");
+        $a3=array("e"=>"red","f"=>"black","g"=>"purple");
+        $a4=array("a"=>"red","b"=>"black","h"=>"yellow");
+
+        $result = array_diff($a1, $a2);
+        $result2 = array_diff($a1, $a3, $a4);
+
+        $this->assertEquals("yellow", $result["d"]);
+
+        $this->assertEquals("green", $result2["b"]);
+        $this->assertEquals("blue", $result2["c"]);
+    }
+
+    /** @test */
+    public function testArrayDiffAssoc() {
+        $a1=array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+        $a2=array("e"=>"red","f"=>"green","g"=>"blue");
+
+        $result = array_diff_assoc($a1, $a2);
+
+        $this->assertEquals("red", $result["a"]);
+        $this->assertEquals("green", $result["b"]);
+        $this->assertEquals("blue", $result["c"]);
+        $this->assertEquals("yellow", $result["d"]);
+
+
+        $a3=array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+        $a4=array("a"=>"red","f"=>"green","g"=>"blue");
+        $a5=array("h"=>"red","b"=>"green","g"=>"blue");
+
+        $result2 = array_diff_assoc($a3, $a4, $a5);
+
+        $this->assertEquals("blue", $result2["c"]);
+        $this->assertEquals("yellow", $result2["d"]);
+    }
+
+    /** @test */
+    public function testArrayDiffKey() {
+        $a1=array("a"=>"red","b"=>"green","c"=>"blue");
+        $a2=array("a"=>"red","c"=>"blue","d"=>"pink");
+        $result = array_diff_key($a1,$a2);
+
+        $this->assertEquals("green", $result["b"]);
+
+        $a3=array("red","green","blue","yellow");
+        $a4=array("red","green","blue");
+
+        $result2 = array_diff_key($a3,$a4);
+        $this->assertEquals("yellow", $result2[3]);
+
+
+        $a5=array("a"=>"red","b"=>"green","c"=>"blue");
+        $a6=array("c"=>"yellow","d"=>"black","e"=>"brown");
+        $a7=array("f"=>"green","c"=>"purple","g"=>"red");
+
+        $result3 = array_diff_key($a5, $a6, $a7);
+        $this->assertEquals("red", $result3["a"]);
+        $this->assertEquals("green", $result3["b"]);
+    }
 }
