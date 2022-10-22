@@ -18,3 +18,6 @@ $obj_user->id = "1002";
 $obj_user->email = "smith@nomail.com";
 
 print_r($obj_user);
+
+$is_std_class = $obj_user instanceof stdClass;
+print_r($is_std_class);
