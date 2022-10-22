@@ -3,9 +3,19 @@
 class Student
 {
 
+    public $name = '';
+
     public function __clone()
     {
         print_r("execute copy object or clone object is successfully");
+    }
+
+    function getName() {
+        return $this->name;
+    }
+
+    function setName($newName) {
+        $this->name = $newName;
     }
 }
 

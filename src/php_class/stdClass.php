@@ -16,6 +16,7 @@ $obj_user->name = "smith john";
 $obj_user->username = "smith";
 $obj_user->id = "1002";
 $obj_user->email = "smith@nomail.com";
+$obj_user->address = "Phnom Penh";
 
 print_r($obj_user);
 
