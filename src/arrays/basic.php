@@ -1,4 +1,13 @@
 <?php
+$names = array("Long", "Vuthy", "Dara", "Tona");
+$names = ["Long", "Vuthy", "Dara", "Tona"];
+$names = array();
+$names[0] = "Long";
+$names[1] = "Vuthy";
+$names[2] = "Dara";
+$names[3] = "Tona";
+print_r($names);
+// create array object use stdClass | empty class in php
 $arr = array();
 $arr['id'] = "ST-001";
 $arr['name'] = "Tona Chheun";
