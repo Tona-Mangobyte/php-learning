@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "php": "^8.0"
+        "php": "^8.3"
     },
     "require-dev": {
         "mockery/mockery": "^1.4.4",
