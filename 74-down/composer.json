@@ -1,0 +1,38 @@
+{
+    "name": "tona/php-learning",
+    "description": "php learning",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tona",
+            "email": "tona@mango-byte.com"
+        }
+    ],
+    "require": {
+        "php": "7.4"
+    },
+    "require-dev": {
+        "vendor/mockery/mockery": "^1.4.4",
+        "vendor/phpunit/phpunit": "^9.5.10"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
