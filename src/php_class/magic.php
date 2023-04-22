@@ -1,10 +1,14 @@
 <?php
+
+namespace src\php_class;
 class Basic
 {
     public function __construct(
         public string $word,
-        public int $number
-    ) {}
+        public int    $number
+    )
+    {
+    }
 }
 
 class Magic

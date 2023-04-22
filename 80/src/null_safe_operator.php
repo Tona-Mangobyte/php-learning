@@ -21,6 +21,6 @@ class Student {
     }
 }
 
-$student = new Student();
+$student = new \src\php_class\Student();
 $student->setFirstName('Simple');
 print_r($student->__toString());

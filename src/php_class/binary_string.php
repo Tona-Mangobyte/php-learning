@@ -1,7 +1,11 @@
 <?php
+
+namespace src\php_class;
 class BinaryString
 {
-    private function __construct(private string $bits) {}
+    private function __construct(private string $bits)
+    {
+    }
 
     public static function fromHex(string $hex): self
     {

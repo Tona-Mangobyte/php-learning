@@ -1,4 +1,6 @@
 <?php
+
+namespace src\php_class;
 class Foo
 {
     private int $counter = 0;

@@ -1,12 +1,15 @@
 <?php
 
+namespace src\php_class;
+
 require "People.php";
 
 class Employee extends People
 {
     private $position, $salary;
 
-    function __construct($name, $address, $age, $position, $salary) {
+    function __construct($name, $address, $age, $position, $salary)
+    {
         parent::__construct($name, $address, $age);
 
         $this->position = $position;
@@ -24,7 +27,8 @@ class Employee extends People
         echo "A Employee has clone successfully\n";
     }
 
-    public function __destruct() {
+    public function __destruct()
+    {
         echo "A Employee is being destroyed!\n";
     }
 

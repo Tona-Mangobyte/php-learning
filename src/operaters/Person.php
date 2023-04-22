@@ -1,5 +1,6 @@
 <?php
 
+namespace src\operaters;
 class Person
 {
     public $firstName;

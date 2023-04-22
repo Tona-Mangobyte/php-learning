@@ -17,7 +17,7 @@
     },
     "autoload": {
         "files": [
-            "src/helpers.php"
+            "P74_down/src/helpers.php"
         ]
     },
     "autoload-dev": {

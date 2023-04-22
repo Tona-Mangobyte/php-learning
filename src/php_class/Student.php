@@ -1,5 +1,6 @@
 <?php
 
+namespace src\php_class;
 class Student
 {
 
@@ -10,11 +11,13 @@ class Student
         print_r("execute copy object or clone object is successfully");
     }
 
-    function getName() {
+    function getName()
+    {
         return $this->name;
     }
 
-    function setName($newName) {
+    function setName($newName)
+    {
         $this->name = $newName;
     }
 }

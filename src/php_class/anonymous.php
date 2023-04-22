@@ -1,5 +1,6 @@
 <?php
 
+namespace src\php_class;
 class Person
 {
     public $name = '';
@@ -11,7 +12,7 @@ class Person
 }
 
 // return an anonymous implementation of Person
-$anonymous = new class() extends Person {
+$anonymous = new class() extends \src\php_class\Person {
     public function getName()
     {
         // return static value for testing purposes

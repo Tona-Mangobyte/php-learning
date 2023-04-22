@@ -1,9 +1,17 @@
 <?php
-class Entertainment {}
 
-class Clown extends Entertainment {}
+namespace src\functions;
+class Entertainment
+{
+}
 
-class Job {}
+class Clown extends Entertainment
+{
+}
+
+class Job
+{
+}
 
 function handleEntertainment(Entertainment $a, callable $callback = NULL): void
 {
@@ -15,8 +23,7 @@ function handleEntertainment(Entertainment $a, callable $callback = NULL): void
 }
 
 // Anonymous functions
-$callback = function()
-{
+$callback = function () {
     // do something
     echo "Execute callback function";
 };

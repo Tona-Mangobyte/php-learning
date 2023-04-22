@@ -1,4 +1,6 @@
 <?php
+
+namespace src\php_class;
 interface A
 {
     public function foo(): int;
@@ -14,7 +16,7 @@ interface C
     public function foo(): string;
 }
 
-class First implements A, B
+class First implements \A, \src\php_class\B
 {
     public function foo(): int
     {

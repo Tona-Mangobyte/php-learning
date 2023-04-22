@@ -1,4 +1,6 @@
 <?php
+
+namespace src\php_class;
 class A
 {
     public function hello(): string
@@ -12,7 +14,7 @@ class A
     }
 }
 
-class B extends A
+class B extends \A
 {
     public function world(): string
     {

@@ -1,16 +1,19 @@
 <?php
 
+namespace src\php_class;
 class People
 {
     private $name, $address, $age;
 
-    function __construct($name, $address, $age) {
+    function __construct($name, $address, $age)
+    {
         $this->name = $name;
         $this->address = $address;
         $this->age = $age;
     }
 
-    function __destruct() {
+    function __destruct()
+    {
         echo "A People is being destroyed!";
     }
 

@@ -1,5 +1,7 @@
 <?php
 
+use src\php_class\Person;
+
 require_once 'Person.php';
 
 $presidents = [];

@@ -1,4 +1,6 @@
 <?php
+
+namespace src\php_class;
 abstract class Base
 {
     abstract public function getData(): string;

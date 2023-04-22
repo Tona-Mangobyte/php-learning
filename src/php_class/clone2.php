@@ -1,4 +1,6 @@
 <?php
+
+namespace src\php_class;
 $parent = new class {
     public string $name = 'parent';
     public stdClass $child;
@@ -8,7 +10,7 @@ $parent = new class {
         $this->child = clone $this->child;
     }
 };
-$parent->child = (object) [
+$parent->child = (object)[
     'name' => 'child'
 ];
 
