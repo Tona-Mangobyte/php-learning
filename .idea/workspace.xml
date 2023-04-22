@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0189f9c5-f18f-4430-93ca-9af1fe62355d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/74-down/src/classs/Foo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/74-down/src/classs/main_foo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +22,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/80/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,72 +32,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
-    <include_path>
-      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
-      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
-      <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
-      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
-      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
-      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
-      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
-      <path value="$PROJECT_DIR$/74-down/vendor/sebastian/environment" />
-      <path value="$PROJECT_DIR$/74-down/vendor/sebastian/exporter" />
-      <path value="$PROJECT_DIR$/74-down/vendor/sebastian/global-state" />
-      <path value="$PROJECT_DIR$/74-down/vendor/sebastian/lines-of-code" />
-      <path value="$PROJECT_DIR$/74-down/vendor/sebastian/object-enumerator" />
-      <path value="$PROJECT_DIR$/74-down/vendor/sebastian/object-reflector" />
-      <path value="$PROJECT_DIR$/74-down/vendor/sebastian/recursion-context" />
-      <path value="$PROJECT_DIR$/74-down/vendor/sebastian/resource-operations" />
-      <path value="$PROJECT_DIR$/74-down/vendor/sebastian/type" />
-      <path value="$PROJECT_DIR$/74-down/vendor/sebastian/version" />
-      <path value="$PROJECT_DIR$/74-down/vendor/composer" />
-      <path value="$PROJECT_DIR$/74-down/vendor/nikic/php-parser" />
-      <path value="$PROJECT_DIR$/74-down/vendor/mockery/mockery" />
-      <path value="$PROJECT_DIR$/74-down/vendor/myclabs/deep-copy" />
-      <path value="$PROJECT_DIR$/74-down/vendor/phar-io/manifest" />
-      <path value="$PROJECT_DIR$/74-down/vendor/phar-io/version" />
-      <path value="$PROJECT_DIR$/74-down/vendor/phpunit/php-code-coverage" />
-      <path value="$PROJECT_DIR$/74-down/vendor/phpunit/php-file-iterator" />
-      <path value="$PROJECT_DIR$/74-down/vendor/phpunit/php-invoker" />
-      <path value="$PROJECT_DIR$/74-down/vendor/phpunit/php-text-template" />
-      <path value="$PROJECT_DIR$/74-down/vendor/phpunit/php-timer" />
-      <path value="$PROJECT_DIR$/74-down/vendor/phpunit/phpunit" />
-      <path value="$PROJECT_DIR$/74-down/vendor/theseer/tokenizer" />
-      <path value="$PROJECT_DIR$/74-down/vendor/doctrine/instantiator" />
-      <path value="$PROJECT_DIR$/74-down/vendor/hamcrest/hamcrest-php" />
-      <path value="$PROJECT_DIR$/74-down/vendor/sebastian/cli-parser" />
-      <path value="$PROJECT_DIR$/74-down/vendor/sebastian/code-unit" />
-      <path value="$PROJECT_DIR$/74-down/vendor/sebastian/code-unit-reverse-lookup" />
-      <path value="$PROJECT_DIR$/74-down/vendor/sebastian/comparator" />
-      <path value="$PROJECT_DIR$/74-down/vendor/sebastian/complexity" />
-      <path value="$PROJECT_DIR$/74-down/vendor/sebastian/diff" />
-    </include_path>
-  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
   <component name="ProjectId" id="2OOjGRdi5LfdF7M0S5OmO9MYzvZ" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -109,13 +46,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "develop",
     "last_opened_file_path": "C:/PHP/php-learning/74-down/vendor/autoload.php",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -126,15 +64,21 @@
       <recent name="C:\PHP\php-learning" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\PHP\php-learning\81\src" />
-      <recent name="C:\PHP\php-learning\80\src" />
-      <recent name="C:\PHP\php-learning\74-down" />
-      <recent name="C:\PHP\php-learning" />
+      <recent name="C:\PHP\php-learning\src" />
+      <recent name="C:\PHP\php-learning\src\classs" />
+      <recent name="C:\PHP\php-learning\src\operaters" />
+      <recent name="C:\PHP\php-learning\src\functions" />
+      <recent name="C:\PHP\php-learning\src\php_class" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="ArrKeysTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\ArrKeysTest" file="$PROJECT_DIR$/74-down/tests/ArrKeysTest.php" scope="Class" />
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\ArrKeysTest" file="$PROJECT_DIR$/tests/ArrKeysTest.php" scope="Class" />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -154,7 +98,7 @@
       <workItem from="1681438430086" duration="293000" />
       <workItem from="1681439721726" duration="1334000" />
       <workItem from="1681612276062" duration="2715000" />
-      <workItem from="1682157202874" duration="660000" />
+      <workItem from="1682157202874" duration="1479000" />
     </task>
     <servers />
   </component>

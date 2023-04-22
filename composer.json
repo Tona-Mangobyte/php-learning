@@ -9,11 +9,11 @@
         }
     ],
     "require": {
-        "php": "7.4"
+        "php": "7.4.*"
     },
     "require-dev": {
-        "vendor/mockery/mockery": "^1.4.4",
-        "vendor/phpunit/phpunit": "^9.5.10"
+        "mockery/mockery": "^1.4.4",
+        "phpunit/phpunit": "^9.5.10"
     },
     "autoload": {
         "files": [
