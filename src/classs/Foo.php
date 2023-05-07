@@ -15,9 +15,10 @@ class Foo
 
     public function greet(): void
     {
-        echo sprintf('%s %s', $this->hello, $this->world);
+        echo sprintf('%s %s', $this->hello, $this->world) . PHP_EOL;
     }
 }
 
 $foo = new Foo;
 $foo->greet();
+print_r($foo);
